@@ -20,7 +20,7 @@ function Footer() {
         <span className="font-medium text-slate-200">usinakenes</span>
       </p>
       <Link
-        href="https://github.com/"
+        href="https://github.com/usinakenes/code-to-img"
         className="flex items-center text-sm font-medium hover:text-slate-200 ease-in-out transition-all duration-500"
       >
         <p className="inline-flex gap-1 items-center">Source Code Here<TbExternalLink /></p>

@@ -65,11 +65,11 @@ const CodeEditor = ({
   //@ts-ignore
   const handleResize = (event, direction, ref, pos) => {
     const newHeight = ref.style.height
-    setHeight(parseInt(newHeight))
+    setHeight(parseInt(newHeight, 10))
   }
 
   const updateSize = () => {
-    setHeight(window.innerWidth)
+    setWidth(window.innerWidth)
   }
 
   useEffect(() => {
@@ -131,7 +131,7 @@ const CodeEditor = ({
             <div className="icon flex justify-center items-center p-1 bg-black/30 rounded-sm">{Icon}</div>
           </div>
           <AceEditor
-            value={initialCode}
+            value={code}
             height={`calc(${height}px - ${currentPadding} - ${currentPadding} - 52px)`}
             fontSize={16}
             theme={theme}
